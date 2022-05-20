@@ -1,4 +1,4 @@
-name: Build Unsigned
+name: Build mtu
 on:
   workflow_dispatch:
 
@@ -9,6 +9,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
+          ref: 'mtu'
           submodules: recursive
       - name: Setup Java
         uses: actions/setup-java@v3
